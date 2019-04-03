@@ -21,4 +21,9 @@ public class GestionPLauncher : MonoBehaviour
         ParticleLauncher.transform.LookAt(transform.localPosition + (Vector3.down *2));
         ParticleLauncher.Emit(1);
     }
+
+    public void EmitFromOutside(int NumberToEmit)
+    {
+        ParticleLauncher.Emit(NumberToEmit);
+    }
 }
